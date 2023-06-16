@@ -112,4 +112,5 @@ Upon completion of the Week 2 Lab Project, all the necessary components and func
 ## Pre-session Material
 [**Here**](https://ibm.box.com/s/45vzi5ews0w3smsbhg4j7egl12kbheyl) are the pre-session materials that were provided to you earlier.
 
-testing git status
+
+Testing git status 
