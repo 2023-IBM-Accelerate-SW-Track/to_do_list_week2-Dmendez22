@@ -21,11 +21,19 @@ class Home extends Component {
     // dealing with a larger data sensitive project.
     todo.id = Math.random();
     // Create a array that contains the current array and the new todo item
-    let new_list = [...this.state.todos, todo];
-    // Update the local state with the new array.
-    this.setState({
-      todos: new_list,
-    });
+
+    // checks if items exits will return true or false if todos contains replicate items
+    const itemExists = this.state.todos.find((element) => element.content === todo.content);
+
+    if (itemExists) {
+      return;
+    } else {
+      let new_list = [...this.state.todos, todo];
+      // Update the local state with the new array.
+      this.setState({
+        todos: new_list,
+      });
+    }
   };
   deleteTodo = (id) => {
     const todos = this.state.todos.filter((todo) => {
